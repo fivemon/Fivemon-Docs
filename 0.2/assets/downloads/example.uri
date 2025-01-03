@@ -1,0 +1,12 @@
+NPC
+
+name welcome
+model a_m_y_hipster_02
+position -1056.683 4775.971 235.807 0.0
+
+interaction
+    tell "Welcome to .uri!"
+        tell "Where your dreams come true"
+
+behaviour
+    nothing

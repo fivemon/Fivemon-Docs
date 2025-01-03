@@ -1,0 +1,31 @@
+/* Asegura que la tabla se ajuste al contenido */
+table {
+    width: auto;
+    table-layout: auto; /* Permite que el navegador calcule los anchos de las columnas automáticamente */
+}
+
+/* Estilo general para todas las celdas */
+table th, table td {
+    white-space: nowrap; /* Evita que el texto se envuelva */
+    padding: 5px;
+    text-align: center;
+    min-width: 40px !important;
+}
+
+
+  
+
+[data-md-color-scheme="default"] {
+    --md-primary-fg-color:        #1417a3;
+    --md-primary-fg-color--light: #5132ff;
+    --md-primary-fg-color--dark:  #15008d;
+  }
+  
+[data-md-color-scheme="slate"] {
+    --md-primary-fg-color:        #1417aa;
+    --md-primary-fg-color--light: #5132ff;
+    --md-primary-fg-color--dark:  #15008d;
+    --md-default-bg-color:  #090b1a;
+    --md-typeset-a-color:   #849aff;
+    --md-footer-bg-color--dark: #000000;
+  }

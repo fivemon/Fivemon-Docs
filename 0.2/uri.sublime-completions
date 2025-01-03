@@ -1,0 +1,353 @@
+{
+  "scope": "source.uri",
+  "completions": [
+    {
+      "trigger": "do",
+      "contents": "do $1[behaviour]"
+    },
+    {
+      "trigger": "nothing",
+      "contents": "nothing"
+    },
+    {
+      "trigger": "ask",
+      "contents": "ask $1[title] $2[answer]"
+    },
+    {
+      "trigger": "tell",
+      "contents": "tell $1[text] $2[timeout]"
+    },
+    {
+      "trigger": "playAnimation",
+      "contents": "playAnimation $1[animDict] $2[animName] $3[duration]"
+    },
+    {
+      "trigger": "input",
+      "contents": "input $1[output] $2[text] $3[placeholder] $4[suggestion] $5[maxLength]"
+    },
+    {
+      "trigger": "clear",
+      "contents": "clear"
+    },
+    {
+      "trigger": "command",
+      "contents": "command $1[command]"
+    },
+    {
+      "trigger": "log",
+      "contents": "log $1[message]"
+    },
+    {
+      "trigger": "goToEntity",
+      "contents": "goToEntity $1[entity] $2[distance] $3[speed]"
+    },
+    {
+      "trigger": "goToEntityOffset",
+      "contents": "goToEntityOffset $1[entity] $2[x] $3[y] $4[relative]"
+    },
+    {
+      "trigger": "goToClosestPlayer",
+      "contents": "goToClosestPlayer $1[distance] $2[speed]"
+    },
+    {
+      "trigger": "wander",
+      "contents": "wander $1[x] $2[y] $3[z] $4[radius] $5[minDistance] $6[timeWaiting]"
+    },
+    {
+      "trigger": "getCombatTarget",
+      "contents": "getCombatTarget $1[target]"
+    },
+    {
+      "trigger": "combat",
+      "contents": "combat $1[target]"
+    },
+    {
+      "trigger": "combatClosestPlayer",
+      "contents": "combatClosestPlayer $1[distance]"
+    },
+    {
+      "trigger": "getClosestPlayer",
+      "contents": "getClosestPlayer $1[player] $2[distance]"
+    },
+    {
+      "trigger": "distanceCoordsClose",
+      "contents": "distanceCoordsClose $1[distance] $2[x] $3[y] $4[z]"
+    },
+    {
+      "trigger": "goToCoords",
+      "contents": "goToCoords $1[x] $2[y] $3[z] $4[distance]"
+    },
+    {
+      "trigger": "lookCoords",
+      "contents": "lookCoords $1[x] $2[y] $3[z]"
+    },
+    {
+      "trigger": "lookEntity",
+      "contents": "lookEntity $1[entity]"
+    },
+    {
+      "trigger": "distanceEntityClose",
+      "contents": "distanceEntityClose $1[distance] $2[entity]"
+    },
+    {
+      "trigger": "playingAnimation",
+      "contents": "playingAnimation $1[entity] $2[animDict] $3[animName]"
+    },
+    {
+      "trigger": "surround",
+      "contents": "surround $1[entity] $2[people] $3[position] $4[radius]"
+    },
+    {
+      "trigger": "flee",
+      "contents": "flee $1[ped] $2[distance]"
+    },
+    {
+      "trigger": "fleeCoords",
+      "contents": "fleeCoords $1[x] $2[y] $3[z] $4[distance]"
+    },
+    {
+      "trigger": "cower",
+      "contents": "cower"
+    },
+    {
+      "trigger": "wait",
+      "contents": "wait $1[duration]"
+    },
+    {
+      "trigger": "setCoords",
+      "contents": "setCoords $1[x] $2[y] $3[z] $4[distance]"
+    },
+    {
+      "trigger": "teleport",
+      "contents": "teleport $1[entity] $2[distance]"
+    },
+    {
+      "trigger": "getClosestVehicle",
+      "contents": "getClosestVehicle $1[vehicle] $2[distance] $3[model] $4[flag]"
+    },
+    {
+      "trigger": "enterVehicle",
+      "contents": "enterVehicle $1[vehicle] $2[seatIndex] $3[speed] $4[timeout] $5[mode]"
+    },
+    {
+      "trigger": "enterClosestVehicle",
+      "contents": "enterClosestVehicle $1[vehicle] $2[distance] $3[seatIndex] $4[speed] $5[timeout] $6[mode]"
+    },
+    {
+      "trigger": "driveToCoords",
+      "contents": "driveToCoords $1[vehicle] $2[x] $3[y] $4[z] $5[distance] $6[speed] $7[mode]"
+    },
+    {
+      "trigger": "driveToEntity",
+      "contents": "driveToEntity $1[vehicle] $2[entity] $3[distance] $4[speed] $5[mode]"
+    },
+    {
+      "trigger": "beRescued",
+      "contents": "beRescued $1[x] $2[y] $3[z]"
+    },
+    {
+      "trigger": "setWalk",
+      "contents": "setWalk $1[walk]"
+    },
+    {
+      "trigger": "getNPC",
+      "contents": "getNPC $1[name] $2[id]"
+    },
+    {
+      "trigger": "giveUbication",
+      "contents": "giveUbication $1[x] $2[y]"
+    },
+    {
+      "trigger": "return",
+      "contents": "return $1[result]"
+    },
+    {
+      "trigger": "openCraftingTable",
+      "contents": "openCraftingTable $1[craftingTableName]"
+    },
+    {
+      "trigger": "openShop",
+      "contents": "openShop $1[shopName]"
+    },
+    {
+      "trigger": "openStorage",
+      "contents": "openStorage $1[storageName]"
+    },
+    {
+      "trigger": "startQuest",
+      "contents": "startQuest $1[quest]"
+    },
+    {
+      "trigger": "forceInteraction",
+      "contents": "forceInteraction"
+    },
+    {
+      "trigger": "set",
+      "contents": "set $1[varied]"
+    },
+    {
+      "trigger": "knows",
+      "contents": "knows"
+    },
+    {
+      "trigger": "setGlobalState",
+      "contents": "setGlobalState $1[k] $2[v]"
+    },
+    {
+      "trigger": "getGlobalState",
+      "contents": "getGlobalState $1[k] $2[output]"
+    },
+    {
+      "trigger": "globalCheck",
+      "contents": "globalCheck $1[k]"
+    },
+    {
+      "trigger": "setLocalState",
+      "contents": "setLocalState $1[k] $2[v]"
+    },
+    {
+      "trigger": "getLocalState",
+      "contents": "getLocalState $1[k] $2[output]"
+    },
+    {
+      "trigger": "localCheck",
+      "contents": "localCheck $1[k]"
+    },
+    {
+      "trigger": "give",
+      "contents": "give $1[item] $2[quantity]"
+    },
+    {
+      "trigger": "remove",
+      "contents": "remove $1[item] $2[quantity]"
+    },
+    {
+      "trigger": "if",
+      "contents": "if $1[value]"
+    },
+    {
+      "trigger": "dice",
+      "contents": "dice $1[faces]"
+    },
+    {
+      "trigger": "serverLog",
+      "contents": "serverLog $1[string]"
+    },
+    {
+      "trigger": "me",
+      "contents": "me $1[message]"
+    },
+    {
+      "trigger": "blockForceInteraction",
+      "contents": "blockForceInteraction"
+    },
+    {
+      "trigger": "unblockForceInteraction",
+      "contents": "unblockForceInteraction"
+    },
+    {
+      "trigger": "weather",
+      "contents": "weather $1[weather]"
+    },
+    {
+      "trigger": "OBJECT",
+      "contents": "OBJECT\n\nname [Name] \nmodel [Model] \nposition [X] [Y] [Z] [Heading] \nfloating [X] [Y] [Z] \nmarker [Model number] [X] [Y] [Z] [ScaleX] [ScaleY] [ScaleZ] [DirX] [DirY] [DirZ] [RotX] [RotY] [RotZ] [R] [G] [B] [A] [upAndDown] [faceCamera] [rotate] \nblip [Name] [Sprite] [Color] \ninteraction [InteractionBehaviourTree] \n"
+    },
+    {
+      "trigger": "NPC",
+      "contents": "NPC\n\nname [Name] \nmodel [Model] \nposition [X] [Y] [Z] [Heading] \nfloating [X] [Y] [Z] \nmarker [Model number] [X] [Y] [Z] [ScaleX] [ScaleY] [ScaleZ] [DirX] [DirY] [DirZ] [RotX] [RotY] [RotZ] [R] [G] [B] [A] [upAndDown] [faceCamera] [rotate] \nblip [Name] [Sprite] [Color] \ninteraction [InteractionBehaviourTree] \nbehaviour [BehaviourTree] \n"
+    },
+    {
+      "trigger": "QUEST",
+      "contents": "QUEST\n\nid [ID] \nname [Name] \ndescription [Description] \nauthor [Author] \nduration [Duration] \nprofile [Profile] \ncategory [Category] \ncoords [X] [Y] [Z] \ntheme [Theme] \ncontext [...Context] \nsuccess [...Success] \nfailure [...Failure] \nunstoppable [Unstoppable] \nrequired [Required] \nminParticipants [MinParticipants] \nmaxParticipants [MaxParticipants] \nparticipants [Participants] \ngoals [GoalsTree] \nimpediments [ImpedimentsTree] \nrewards [RewardsList] \nrequirements [RequirementsList] \nuniqueRequirements [UniqueRequirementsList] \nconditions [ConditionsList] \nlimit [Limit] \ncompensations [CompensationsList] \n"
+    },
+    {
+      "trigger": "getItem",
+      "contents": "getItem itemName=$1[itemName]"
+    },
+    {
+      "trigger": "meetNPC",
+      "contents": "meetNPC npc=$1[npc]"
+    },
+    {
+      "trigger": "talkNPC",
+      "contents": "talkNPC npc=$1[npc]"
+    },
+    {
+      "trigger": "item",
+      "contents": "item $1[quantity] $2[item]"
+    },
+    {
+      "trigger": "money",
+      "contents": "money $1[quantity]"
+    },
+    {
+      "trigger": "forcePokemonBattle",
+      "contents": "forcePokemonBattle $1[actives] $2[NPC]"
+    },
+    {
+      "trigger": "startPokemonBattle",
+      "contents": "startPokemonBattle $1[actives] $2[NPC]"
+    },
+    {
+      "trigger": "givePokemon",
+      "contents": "givePokemon $1[pokemonId]"
+    },
+    {
+      "trigger": "hasFoughtPokemonBattle",
+      "contents": "hasFoughtPokemonBattle"
+    },
+    {
+      "trigger": "hasLostPokemonBattle",
+      "contents": "hasLostPokemonBattle"
+    },
+    {
+      "trigger": "hasWonPokemonBattle",
+      "contents": "hasWonPokemonBattle"
+    },
+    {
+      "trigger": "hasTiedPokemonBattle",
+      "contents": "hasTiedPokemonBattle"
+    },
+    {
+      "trigger": "hasPokemonLike",
+      "contents": "hasPokemonLike $1[quantity] $2[species] $3[minLevel] $4[maxLevel] $5[ptype] $6[sex] $7[shiny] $8[item] $9[nature] $10[ability] $11[move1] $12[move2] $13[move3] $14[move4] $15[IV_HP_min] $16[IV_HP_max] $17[IV_ATK_min] $18[IV_ATK_max] $19[IV_DEF_min] $20[IV_DEF_max] $21[IV_SPA_min] $22[IV_SPA_max] $23[IV_SPD_min] $24[IV_SPD_max] $25[IV_SPE_min] $26[IV_SPE_max] $27[EV_HP_min] $28[EV_HP_max] $29[EV_ATK_min] $30[EV_ATK_max] $31[EV_DEF_min] $32[EV_DEF_max] $33[EV_SPA_min] $34[EV_SPA_max] $35[EV_SPD_min] $36[EV_SPD_max] $37[EV_SPE_min] $38[EV_SPE_max]"
+    },
+    {
+      "trigger": "TRAINER",
+      "contents": "TRAINER\n\nnpc [NPC] \npokemon [...Pokemon] \n"
+    },
+    {
+      "trigger": "POKEMON",
+      "contents": "POKEMON\n\nid [string] \nname [string] \nlevel [integer] \nmoves [...move] \nposition [x] [y] [z] [heading] \nnick [Nickname] \nskin [Skin] \nshiny [boolean] \nitem [Item] \nsex [Sex] \nnature [Nature] \nability [Ability] \nIV [HP] [ATK] [DEF] [SPA] [SPD] [SPE] \nEV [HP] [ATK] [DEF] [SPA] [SPD] [SPE] \n"
+    },
+    {
+      "trigger": "pokemonCaptured",
+      "contents": "pokemonCaptured species=$1[species] notSpecies=$2[notSpecies] minLevel=$3[minLevel] maxLevel=$4[maxLevel] notMinLevel=$5[notMinLevel] notMaxLevel=$6[notMaxLevel] type=$7[type] notType=$8[notType] sex=$9[sex] notSex=$10[notSex] shiny=$11[shiny] notShiny=$12[notShiny] item=$13[item] notItem=$14[notItem] nature=$15[nature] notNature=$16[notNature] ability=$17[ability] notAbility=$18[notAbility] move1=$19[move1] notMove1=$20[notMove1] move2=$21[move2] notMove2=$22[notMove2] move3=$23[move3] notMove3=$24[notMove3] move4=$25[move4] notMove4=$26[notMove4] ivHpMin=$27[ivHpMin] ivHpMax=$28[ivHpMax] ivAtkMin=$29[ivAtkMin] ivAtkMax=$30[ivAtkMax] ivDefMin=$31[ivDefMin] ivDefMax=$32[ivDefMax] ivSpaMin=$33[ivSpaMin] ivSpaMax=$34[ivSpaMax] ivSpdMin=$35[ivSpdMin] ivSpdMax=$36[ivSpdMax] ivSpeMin=$37[ivSpeMin] ivSpeMax=$38[ivSpeMax] notIvHpMin=$39[notIvHpMin] notIvHpMax=$40[notIvHpMax] notIvAtkMin=$41[notIvAtkMin] notIvAtkMax=$42[notIvAtkMax] notIvDefMin=$43[notIvDefMin] notIvDefMax=$44[notIvDefMax] notIvSpaMin=$45[notIvSpaMin] notIvSpaMax=$46[notIvSpaMax] notIvSpdMin=$47[notIvSpdMin] notIvSpdMax=$48[notIvSpdMax] notIvSpeMin=$49[notIvSpeMin] notIvSpeMax=$50[notIvSpeMax] evHpMin=$51[evHpMin] evHpMax=$52[evHpMax] evAtkMin=$53[evAtkMin] evAtkMax=$54[evAtkMax] evDefMin=$55[evDefMin] evDefMax=$56[evDefMax] evSpaMin=$57[evSpaMin] evSpaMax=$58[evSpaMax] evSpdMin=$59[evSpdMin] evSpdMax=$60[evSpdMax] evSpeMin=$61[evSpeMin] evSpeMax=$62[evSpeMax] notEvHpMin=$63[notEvHpMin] notEvHpMax=$64[notEvHpMax] notEvAtkMin=$65[notEvAtkMin] notEvAtkMax=$66[notEvAtkMax] notEvDefMin=$67[notEvDefMin] notEvDefMax=$68[notEvDefMax] notEvSpaMin=$69[notEvSpaMin] notEvSpaMax=$70[notEvSpaMax] notEvSpdMin=$71[notEvSpdMin] notEvSpdMax=$72[notEvSpdMax] notEvSpeMin=$73[notEvSpeMin] notEvSpeMax=$74[notEvSpeMax]"
+    },
+    {
+      "trigger": "pokemonFainted",
+      "contents": "pokemonFainted wild=$1[wild] owned=$2[owned] count=$3[count] species=$4[species] notSpecies=$5[notSpecies] minLevel=$6[minLevel] maxLevel=$7[maxLevel] notMinLevel=$8[notMinLevel] notMaxLevel=$9[notMaxLevel] type=$10[type] notType=$11[notType] sex=$12[sex] notSex=$13[notSex] shiny=$14[shiny] notShiny=$15[notShiny] item=$16[item] notItem=$17[notItem] nature=$18[nature] notNature=$19[notNature] ability=$20[ability] notAbility=$21[notAbility] move1=$22[move1] notMove1=$23[notMove1] move2=$24[move2] notMove2=$25[notMove2] move3=$26[move3] notMove3=$27[notMove3] move4=$28[move4] notMove4=$29[notMove4] ivHpMin=$30[ivHpMin] ivHpMax=$31[ivHpMax] ivAtkMin=$32[ivAtkMin] ivAtkMax=$33[ivAtkMax] ivDefMin=$34[ivDefMin] ivDefMax=$35[ivDefMax] ivSpaMin=$36[ivSpaMin] ivSpaMax=$37[ivSpaMax] ivSpdMin=$38[ivSpdMin] ivSpdMax=$39[ivSpdMax] ivSpeMin=$40[ivSpeMin] ivSpeMax=$41[ivSpeMax] notIvHpMin=$42[notIvHpMin] notIvHpMax=$43[notIvHpMax] notIvAtkMin=$44[notIvAtkMin] notIvAtkMax=$45[notIvAtkMax] notIvDefMin=$46[notIvDefMin] notIvDefMax=$47[notIvDefMax] notIvSpaMin=$48[notIvSpaMin] notIvSpaMax=$49[notIvSpaMax] notIvSpdMin=$50[notIvSpdMin] notIvSpdMax=$51[notIvSpdMax] notIvSpeMin=$52[notIvSpeMin] notIvSpeMax=$53[notIvSpeMax] evHpMin=$54[evHpMin] evHpMax=$55[evHpMax] evAtkMin=$56[evAtkMin] evAtkMax=$57[evAtkMax] evDefMin=$58[evDefMin] evDefMax=$59[evDefMax] evSpaMin=$60[evSpaMin] evSpaMax=$61[evSpaMax] evSpdMin=$62[evSpdMin] evSpdMax=$63[evSpdMax] evSpeMin=$64[evSpeMin] evSpeMax=$65[evSpeMax] notEvHpMin=$66[notEvHpMin] notEvHpMax=$67[notEvHpMax] notEvAtkMin=$68[notEvAtkMin] notEvAtkMax=$69[notEvAtkMax] notEvDefMin=$70[notEvDefMin] notEvDefMax=$71[notEvDefMax] notEvSpaMin=$72[notEvSpaMin] notEvSpaMax=$73[notEvSpaMax] notEvSpdMin=$74[notEvSpdMin] notEvSpdMax=$75[notEvSpdMax] notEvSpeMin=$76[notEvSpeMin] notEvSpeMax=$77[notEvSpeMax] teamSpecies=$78[teamSpecies] teamNotSpecies=$79[teamNotSpecies] teamMinLevel=$80[teamMinLevel] teamMaxLevel=$81[teamMaxLevel] teamNotMinLevel=$82[teamNotMinLevel] teamNotMaxLevel=$83[teamNotMaxLevel] teamType=$84[teamType] teamNotType=$85[teamNotType] teamSex=$86[teamSex] teamNotSex=$87[teamNotSex] teamShiny=$88[teamShiny] teamNotShiny=$89[teamNotShiny] teamItem=$90[teamItem] teamNotItem=$91[teamNotItem] teamNature=$92[teamNature] teamNotNature=$93[teamNotNature] teamAbility=$94[teamAbility] teamNotAbility=$95[teamNotAbility] teamMove1=$96[teamMove1] teamNotMove1=$97[teamNotMove1] teamMove2=$98[teamMove2] teamNotMove2=$99[teamNotMove2] teamMove3=$100[teamMove3] teamNotMove3=$101[teamNotMove3] teamMove4=$102[teamMove4] teamNotMove4=$103[teamNotMove4] teamIvHpMin=$104[teamIvHpMin] teamIvHpMax=$105[teamIvHpMax] teamIvAtkMin=$106[teamIvAtkMin] teamIvAtkMax=$107[teamIvAtkMax] teamIvDefMin=$108[teamIvDefMin] teamIvDefMax=$109[teamIvDefMax] teamIvSpaMin=$110[teamIvSpaMin] teamIvSpaMax=$111[teamIvSpaMax] teamIvSpdMin=$112[teamIvSpdMin] teamIvSpdMax=$113[teamIvSpdMax] teamIvSpeMin=$114[teamIvSpeMin] teamIvSpeMax=$115[teamIvSpeMax] teamNotIvHpMin=$116[teamNotIvHpMin] teamNotIvHpMax=$117[teamNotIvHpMax] teamNotIvAtkMin=$118[teamNotIvAtkMin] teamNotIvAtkMax=$119[teamNotIvAtkMax] teamNotIvDefMin=$120[teamNotIvDefMin] teamNotIvDefMax=$121[teamNotIvDefMax] teamNotIvSpaMin=$122[teamNotIvSpaMin] teamNotIvSpaMax=$123[teamNotIvSpaMax] teamNotIvSpdMin=$124[teamNotIvSpdMin] teamNotIvSpdMax=$125[teamNotIvSpdMax] teamNotIvSpeMin=$126[teamNotIvSpeMin] teamNotIvSpeMax=$127[teamNotIvSpeMax] teamEvHpMin=$128[teamEvHpMin] teamEvHpMax=$129[teamEvHpMax] teamEvAtkMin=$130[teamEvAtkMin] teamEvAtkMax=$131[teamEvAtkMax] teamEvDefMin=$132[teamEvDefMin] teamEvDefMax=$133[teamEvDefMax] teamEvSpaMin=$134[teamEvSpaMin] teamEvSpaMax=$135[teamEvSpaMax] teamEvSpdMin=$136[teamEvSpdMin] teamEvSpdMax=$137[teamEvSpdMax] teamEvSpeMin=$138[teamEvSpeMin] teamEvSpeMax=$139[teamEvSpeMax] teamNotEvHpMin=$140[teamNotEvHpMin] teamNotEvHpMax=$141[teamNotEvHpMax] teamNotEvAtkMin=$142[teamNotEvAtkMin] teamNotEvAtkMax=$143[teamNotEvAtkMax] teamNotEvDefMin=$144[teamNotEvDefMin] teamNotEvDefMax=$145[teamNotEvDefMax] teamNotEvSpaMin=$146[teamNotEvSpaMin] teamNotEvSpaMax=$147[teamNotEvSpaMax] teamNotEvSpdMin=$148[teamNotEvSpdMin] teamNotEvSpdMax=$149[teamNotEvSpdMax] teamNotEvSpeMin=$150[teamNotEvSpeMin] teamNotEvSpeMax=$151[teamNotEvSpeMax]"
+    },
+    {
+      "trigger": "teamFainted",
+      "contents": "teamFainted"
+    },
+    {
+      "trigger": "teamHealed",
+      "contents": "teamHealed"
+    },
+    {
+      "trigger": "pokemonBattleStopped",
+      "contents": "pokemonBattleStopped state=$1[state] againstNPC=$2[againstNPC]"
+    },
+    {
+      "trigger": "pokemonCapturedRegistered",
+      "contents": "pokemonCapturedRegistered species=$1[species]"
+    },
+    {
+      "trigger": "pokemonSeenRegistered",
+      "contents": "pokemonSeenRegistered species=$1[species]"
+    },
+  ]
+}
