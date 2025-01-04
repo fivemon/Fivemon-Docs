@@ -1,0 +1,57 @@
+%YAML 1.2
+---
+name: Uri
+file_extensions: [uri]
+scope: source.uri
+
+contexts:
+  main:
+
+    # Strings
+    - match: '"[^"{}]*"'
+      scope: string.quoted.double.uri
+
+    # Cadenas operaciones complejas dentro de {}
+    - match: '"\{[^"{}]*\}"'
+      scope: expression.operation.uri
+
+    # Palabras en mayúsculas empezando una línea
+    - match: '^[A-Z]+'
+      scope: keyword.control.uppercase.uri
+
+    # Palabras en minúsculas/mayúsculas
+    - match: '^[a-zA-Z]+'
+      scope: keyword.control.lowercase.uri
+
+    # Números incluyendo . y - al inicio
+    - match: '-?\b\d+(\.\d+)?\b'
+      scope: constant.numeric.uri
+
+    # Comentarios
+    - match: '^//.*'
+      scope: comment.line.double-slash.uri
+
+    # Generalizado palabra1=palabra2
+    - match: '(\w+)='
+      captures:
+        1: keyword.other.assignment.key.uri
+
+    # Primeras palabras indentadas
+    - match: '^\s+\w+'
+      scope: keyword.control.indented.uri
+
+    # Primeras palabras locked
+    - match: '^\s+\**\w+'
+      scope: keyword.control.locked.uri
+
+    # Palabras locale
+    - match: '\.\w+'
+      scope: variable.locale.uri
+
+    # Palabras variables
+    - match: '\$\w+'
+      scope: variable.other.uri
+
+    # Palabras que no cumplen con las reglas anteriores
+    - match: '\b\w+\b'
+      scope: variable.other.uri
