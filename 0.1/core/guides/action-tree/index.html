@@ -1,0 +1,1378 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://wiki.fivemon.gg/0.1/core/guides/action-tree/">
+      
+      
+        <link rel="prev" href="../uri-basis/">
+      
+      
+        <link rel="next" href="../../resources/items/">
+      
+      
+      <link rel="icon" href="../../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
+    
+    
+      
+        <title>Action trees fundamentals - Fivemon Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.3cba04c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Poppins";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../css/custom.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#action-tree-fundamentals" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+  You're not viewing the latest version.
+  <a href="../../../.."> 
+    <strong>Click here to go to latest.</strong>
+  </a>
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),outdated=__md_get("__outdated",sessionStorage);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Fivemon Wiki" class="md-header__button md-logo" aria-label="Fivemon Wiki" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Fivemon Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Action trees fundamentals
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../uri-intro/" class="md-tabs__link">
+          
+  
+  Core
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../pokemon/resources/pokedex/" class="md-tabs__link">
+          
+  
+  Pokémon
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Fivemon Wiki" class="md-nav__button md-logo" aria-label="Fivemon Wiki" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    Fivemon Wiki
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Core
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Core
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Guides
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1_1" id="__nav_2_1_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Uri
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            Uri
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../uri-intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../uri-basis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fundamentals
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Action trees fundamentals
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Action trees fundamentals
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#action-concept" class="md-nav__link">
+    <span class="md-ellipsis">
+      Action Concept
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Action Concept">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#action-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Action Structure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#action-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Action Examples
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#say-welcome-to-the-world-of-uri" class="md-nav__link">
+    <span class="md-ellipsis">
+      say "Welcome to the world of .uri"
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#states-and-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      States and Variables
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="States and Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-of-a-local-variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example of a Local Variable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-of-a-global-variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example of a Global Variable
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types-of-action-trees" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of Action Trees
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Types of Action Trees">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interaction-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interaction Tree
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behavior-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      Behavior Tree
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Behavior Tree">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#branch-locking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Branch Locking
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-tokens-and-variables-in-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using Tokens and Variables in Parameters
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tell-hello-player_name-welcome-to-the-game" class="md-nav__link">
+    <span class="md-ellipsis">
+      tell "Hello, $player_name, welcome to the game."
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arithmetic-logical-expressions-in-uri" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arithmetic-Logical Expressions in .uri
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Arithmetic-Logical Expressions in .uri">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arithmetic-expression-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arithmetic Expression Example
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-of-strings-with-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example of strings with variables:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-variables-in-expressions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using Variables in Expressions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logical-comparisons" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logical Comparisons
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complex-expressions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complex Expressions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#support-for-arithmetic-and-logical-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Support for Arithmetic and Logical Operations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    
+  
+  
+    <a href="../../resources/items/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Resources
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    
+  
+  
+    <a href="../../utilities/commands/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Utilities
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    
+  
+  
+    <a href="../../extensions/actions/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Extensions
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    
+  
+  
+    
+  
+  
+    <a href="../../../pokemon/resources/pokedex/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Pokémon
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="action-tree-fundamentals">Action Tree Fundamentals</h1>
+<p>Action trees in <strong>.uri</strong> are essential for defining the interaction logic between the player and NPCs or objects, as well as determining NPC behavior within the game world. These trees are used to control everything from simple dialogues to complex behavior sequences, including 1-on-1 interactions and managing both local and global states at the NPC and tree level.</p>
+<h2 id="action-concept">Action Concept</h2>
+<p>The action is the most fundamental aspect of the tree, representing its nodes. It is a <strong>basic unit of behavior that is executed and does something in its context</strong>. Actions allow you to create dialogues, movements, state changes, calculations, and any other behavior you want to implement in the game. Each action can have a set of <strong>parameters</strong> that define what it does.</p>
+<p>Actions can be used for <strong>interactions</strong>, <strong>behavior</strong>, or <strong>both</strong>. When an action is executed, the next action is executed unless the tree ends. It is the action itself that affects the flow of actions that follow—it can execute its first child action or its second, based on its <strong>result, which can be 1, 2, 3...</strong></p>
+<h3 id="action-structure">Action Structure</h3>
+<p>An action consists of:</p>
+<ul>
+<li><strong>The action name</strong>: This is the action identifier and determines what type of behavior will be executed (e.g., <code>say</code>, <code>ask</code>, <code>go</code>).</li>
+<li><strong>Parameters</strong>: These are the data or additional information the action needs to execute (e.g., the message an NPC should say, the options for a question, the movement coordinates).</li>
+<li><strong>Results</strong>: Some actions return a numeric result that can be used to control the flow of the action tree (e.g., in the case of a question, the user's response determines the result: if they choose the first option, the result is one; if they choose the second, the result is two, and so on).</li>
+</ul>
+<h3 id="action-examples">Action Examples</h3>
+<hr />
+<h2 id="say-welcome-to-the-world-of-uri">say "Welcome to the world of .uri"</h2>
+<p>In this example, <code>say</code> is the action that indicates the NPC should display a message, and <code>"Welcome to the world of .uri"</code> is the parameter that contains the message.</p>
+<hr />
+<p>ask "Onion in your tortilla or without?" "With onion" "Without onion"
+   tell "So, with onion..."
+   tell "So, without onion..."</p>
+<hr />
+<p>In this other example, <code>ask</code> is an action that allows the user to choose within an interaction and conditions the conversation based on their choice. For instance, if the user chooses "With onion," the result of this action is 1, so the NPC will say the first of its next actions, "So, with onion."</p>
+<h2 id="states-and-variables">States and Variables</h2>
+<p>In <strong>.uri</strong>, both states and variables play a crucial role in managing NPC logic and interactions within the game. <strong>Variables</strong> are data containers that store information and can be either <strong>local</strong> or <strong>global</strong>. A <strong>local variable</strong> exists only for a single execution of the tree, and when it ends, it is erased. For example, if a player inputs their name in a dialogue, it could be stored in a local variable called <code>player_name</code>. This variable would only exist for that player until the actions in the tree end. On the other hand, a <strong>global variable</strong> is available even after the entire tree execution, and its value is shared and accessible at any time until the server is restarted. This is useful for data that must remain consistent across the game, such as a counter tracking how many times an NPC has been interacted with.</p>
+<p><strong>States</strong>, meanwhile, describe the current condition or behavior of an NPC and can also be <strong>local</strong> or <strong>global</strong>. A <strong>local state</strong> reflects the NPC's relationship with a specific player; for instance, a local state could indicate whether an NPC is following the player who activated it. This state is exclusive to that interaction. A <strong>global state</strong>, in contrast, affects how the NPC behaves with all players, such as if the NPC is in patrol or rest mode, and is visible and consistent for all users in the game. These states persist even if the server restarts.</p>
+<p><strong>Example:</strong> If an NPC has a global state of <code>patrolling</code> and a player interacts with it, it might activate a local state of <code>following</code>, causing the NPC to follow only that player. At the same time, other interactions would not affect its global patrol state. Additionally, the player's name could be stored in a local variable to personalize future interactions with that NPC during the same session. This differentiated use of states and variables allows for great flexibility and control in programming dynamic and specific behaviors in <strong>.uri</strong>.</p>
+<h4 id="example-of-a-local-variable">Example of a Local Variable</h4>
+<hr />
+<p>ask color "Tell me your favorite color:" "Enter the color..." "Blue" 20
+   tell "So, your favorite color is $color"</p>
+<hr />
+<p>In this example:
+1. The <code>ask</code> action stores the color the player inputs in the local variable <code>color</code>.
+2. Then, the <code>say</code> action uses this local variable to personalize the NPC's dialogue.</p>
+<h4 id="example-of-a-global-variable">Example of a Global Variable</h4>
+<hr />
+<p>// This first line increments the counter by 1, or sets it to 0 and adds 1 if it's the first time.
+set mission_counter {$mission_counter or 0 + 1}
+// This line checks if it's already 10, and if so, the result of the action is 1.
+   if {$mission_counter == 10}
+      tell "We have completed $mission_counter missions."
+      tell "We're not at 10 yet. We're at $mission_counter."</p>
+<hr />
+<p>In this example:
+1. The <code>set</code> action stores a global variable <code>mission_counter</code> and increments it.
+2. Then, the <code>if</code> action checks if the counter has reached 10.
+3. Finally, the NPC uses <code>say</code> to inform the player how the counter is progressing.</p>
+<h2 id="types-of-action-trees">Types of Action Trees</h2>
+<p>There are two main types of action trees in <strong>.uri</strong>: interaction trees and behavior trees. While both function similarly, they have key differences that make them suitable for different purposes in the game.</p>
+<h3 id="interaction-tree">Interaction Tree</h3>
+<p>An interaction tree is a type of action tree that is executed when a player directly interacts with an NPC or object. This tree defines what happens when the player talks to the NPC, allowing for a series of chained actions related to the player. Interaction trees have default variables such as the player being spoken to as "player" and the NPC's name as "name."</p>
+<p><strong>Example:</strong></p>
+<p>Imagine a player talking to an NPC named Gustavo. Upon starting the conversation, the interaction tree might define the following sequence:</p>
+<ol>
+<li><strong>Action Say:</strong> The NPC says: "Hi, my name is Gustavo."</li>
+<li><strong>Action Ask:</strong> The NPC asks: "Are you from here?"</li>
+<li><strong>Response 1:</strong> If the player answers "Yes" (returns <code>1</code>), the NPC says: "Nice, I like you."</li>
+<li><strong>Response 2:</strong> If the player answers "No" (returns <code>2</code>), the NPC says: "Get out of here, we don't want you."</li>
+</ol>
+<hr />
+<p>tell "Hi, my name is Gustavo."
+   ask "Are you from here?" "Yes" "No"
+      tell "Nice, I like you."
+      tell "Get out of here, we don't want you."</p>
+<hr />
+<p>Each action within the tree returns a result that can be used to determine the next action in the sequence, allowing for logical and dynamic interactions.</p>
+<h3 id="behavior-tree">Behavior Tree</h3>
+<p>A behavior tree, on the other hand, defines the actions that an NPC performs within the game world, independent of direct interaction with a player. This tree can control whether an NPC is patrolling, following a player, driving a vehicle, or performing any other autonomous action. Unlike the interaction tree, which runs once during an interaction, this tree runs on every tick (every few seconds). The behavior tree has the NPC's name as a variable called "name."</p>
+<p><strong>Example:</strong></p>
+<p>A behavior tree might define that an NPC patrols a specific area and changes its state to follow the player if it detects their presence.</p>
+<ol>
+<li><strong>Action FindNearestPlayer:</strong> If a player is nearby, the NPC goes toward them.</li>
+<li><strong>Response 1:</strong> The NPC is close to the player. <strong>Action Nothing:</strong> The NPC does nothing.</li>
+<li><strong>Response 2:</strong> The NPC is moving toward the player. <strong>Action Nothing:</strong> The NPC does nothing.</li>
+<li><strong>Response 3:</strong> No player is nearby. <strong>Action Wander:</strong> The NPC continues patrolling.</li>
+</ol>
+<hr />
+<p>getClosestPlayer 15.0 3.0
+   nothing
+   nothing
+   wander -1020.72 4839.78 258.30 10 5 5</p>
+<hr />
+<h4 id="branch-locking">Branch Locking</h4>
+<p>Behavior trees have a special feature that distinguishes them from interaction trees. Due to their nature of running every few seconds, an action might become useless if it doesn’t have time to finish before the next execution. To address this, there is the concept of locking the branch, meaning for a specific sequence of actions within the tree, you ensure the first action completes fully before allowing the next ones to proceed.</p>
+<p><strong>Example:</strong></p>
+<hr />
+<p>getClosestPlayer player;
+*surround $player 5 3 5
+   wait 10
+      playAnimation "anim@mp_player_intcelebrationmale@smoke_flick" "smoke_flick"
+         playAnimation "anim@mp_player_intcelebrationmale@smoke_flick" "smoke_flick"
+            playAnimation "mini@strip_club@lap_dance@ld_girl_a_exit" "ld_girl_a_exit_f"</p>
+<hr />
+<p>In this example, we ensure that the NPC is circling around the player before waiting 10 seconds and then chaining the animations. If the NPC stops circling, it will recheck and resume circling.</p>
+<h2 id="using-tokens-and-variables-in-parameters">Using Tokens and Variables in Parameters</h2>
+<p>In <strong>.uri</strong>, tokens are used as parameters within the nodes of an action tree. A token can be a word, a number, or a variable. Variables can be used within text strings to be interpreted in real-time.</p>
+<p><strong>Example:</strong></p>
+<hr />
+<h2 id="tell-hello-player_name-welcome-to-the-game">tell "Hello, $player_name, welcome to the game."</h2>
+<p>Here, <code>$player_name</code> is a variable that will be replaced in real-time by the previously stored player’s name.</p>
+<h2 id="arithmetic-logical-expressions-in-uri">Arithmetic-Logical Expressions in .uri</h2>
+<p>In <strong>.uri</strong>, arithmetic-logical expressions allow for real-time calculations and evaluations within the code. These expressions are defined between curly braces <code>{}</code> and can include mathematical operations, logical comparisons, and the use of variables. The expressions behave similarly to <strong>Lua</strong>, but with minor differences, such as using <code>!=</code> instead of <code>~=</code> for inequality comparison.</p>
+<p>Expressions can combine addition, subtraction, multiplication, division, and more, allowing for dynamic logic within action trees.</p>
+<h3 id="arithmetic-expression-example">Arithmetic Expression Example</h3>
+<hr />
+<p>set result {2 + 3}
+   tell "The result is $result."</p>
+<hr />
+<p>In this example:
+1. The expression <code>{2 + 3}</code> performs an addition, and the value <code>5</code> is stored in the variable <code>result</code>.
+2. Then, the <code>say</code> action uses the <code>$result</code> variable to display the result in the dialogue.</p>
+<h3 id="example-of-strings-with-variables">Example of strings with variables:</h3>
+<p>Strings can also be concatenated with other expressions within the curly braces <code>{}</code>, allowing for greater flexibility in messages and calculations involving text.</p>
+<hr />
+<p>set player_name "Carlos"
+   if {"Carlos" == $player_name}
+      tell "Hello, $player_name, welcome to the game."</p>
+<hr />
+<p>In this example:
+1. The <code>player_name</code> variable is set to <code>"Carlos"</code>.
+2. A check is performed to see if two strings are equal.
+3. The <code>say</code> action uses this variable within a string to create a dynamic message that greets the player by name.</p>
+<h3 id="using-variables-in-expressions">Using Variables in Expressions</h3>
+<p>You can use variables within expressions to make calculations dynamic. Variables must be preceded by <code>$</code> to indicate that their current value is being used.</p>
+<hr />
+<p>set points 50
+   set bonus {$points + 10}
+      tell "You have earned $bonus experience points."</p>
+<hr />
+<p>In this example:
+1. A <code>points</code> variable is set to <code>50</code>.
+2. Then, the expression <code>{$points + 10}</code> adds <code>10</code> to the <code>points</code> variable, and the result (<code>60</code>) is stored in the <code>bonus</code> variable.
+3. Finally, the NPC informs the player of their experience points using the <code>$bonus</code> variable.</p>
+<h3 id="logical-comparisons">Logical Comparisons</h3>
+<p><strong>.uri</strong> also allows for logical comparisons within expressions. You can compare values using operators such as <code>&gt;</code>, <code>&lt;</code>, <code>&gt;=</code>, <code>&lt;=</code>, <code>==</code> (equality), and <code>!=</code> (inequality). These comparisons evaluate to <code>true</code> or <code>false</code>.</p>
+<hr />
+<p>set current_health 30
+   set is_injured {$current_health &lt; 50}
+      tell "Are you injured?: $is_injured."</p>
+<hr />
+<p>In this example:
+1. The <code>current_health</code> variable has a value of <code>30</code>.
+2. The expression <code>{$current_health &lt; 50}</code> evaluates whether the health is less than <code>50</code>. Since the condition is true, the <code>is_injured</code> variable is set to <code>true</code>.
+3. The NPC informs the player whether they are injured based on the expression's evaluation.</p>
+<h3 id="complex-expressions">Complex Expressions</h3>
+<p>Expressions in <strong>.uri</strong> also support combinations of arithmetic and logical operations in a single expression.</p>
+<hr />
+<p>set health 100
+   set damage 30
+      set remaining_health {$health - $damage}
+         set in_danger {$remaining_health &lt;= 20}
+            tell "You have $remaining_health health points left. Are you in danger?: $in_danger."</p>
+<hr />
+<p>In this example:
+1. The expression <code>{$health - $damage}</code> calculates the remaining health after receiving damage.
+2. The expression <code>{$remaining_health &lt;= 20}</code> evaluates whether the remaining health is less than or equal to <code>20</code>, and if so, the <code>in_danger</code> variable is set to <code>true</code>.
+3. The NPC informs the player of their remaining health and whether they are in danger.</p>
+<h3 id="support-for-arithmetic-and-logical-operations">Support for Arithmetic and Logical Operations</h3>
+<p><strong>.uri</strong> supports almost all common operations, including:</p>
+<ul>
+<li><strong>Addition</strong>: <code>{a + b}</code></li>
+<li><strong>Subtraction</strong>: <code>{a - b}</code></li>
+<li><strong>Multiplication</strong>: <code>{a * b}</code></li>
+<li><strong>Division</strong>: <code>{a / b}</code></li>
+<li><strong>Integer division</strong>: <code>{a // b}</code></li>
+<li><strong>Comparisons</strong>: <code>{a &gt; b}</code>, <code>{a &lt;= b}</code>, <code>{a == b}</code>, <code>{a != b}</code></li>
+</ul>
+<p>These operations can be combined and nested to create complex logic that is evaluated in real-time during action execution.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Action trees in .uri offer a flexible and powerful structure for managing behavior and interactions in the game. Through actions, variables, states, and expressions, complex logic can be created that makes NPCs dynamically react and interact with players.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2024 Fivemon
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://fivemon.gg" target="_blank" rel="noopener" title="fivemon.gg" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2 0-.68.06-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.923 7.923 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8.008 8.008 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.65 15.65 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/fivemonmod" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9L389.2 48zm-24.8 373.8h39.1L151.1 88h-42l255.3 333.8z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://discord.gg/BQkmHJyJUC" target="_blank" rel="noopener" title="discord.gg" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.prune", "navigation.tabs", "navigation.tabs.sticky", "toc.integrate", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"alias": true, "default": "latest", "provider": "mike"}}</script>
+    
+    
+
+      <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+    
+<script>
+  const processLinksAndImages = () => {
+    const currentBase = window.location.origin;
+    const currentPath = window.location.pathname;
+    const versionRegex = /^\/([^\/]+)\//;
+    const match = currentPath.match(versionRegex);
+
+    if (!match) {
+      return;
+    }
+
+    const currentVersion = match[1];
+
+    const links = document.querySelectorAll("a[href], img[src]");
+
+    const promises = [];
+
+    links.forEach((link) => {
+      const attr = link.tagName === "IMG" ? "src" : "href";
+      const url = link.getAttribute(attr);
+
+      if (/^(https?:|mailto:|#|\/\/.+)/.test(url)) {
+        if (!url.startsWith(currentBase)) return;
+        if (url.startsWith(`${currentBase}/${currentVersion}/`)) return;
+      } else {
+        if (url.startsWith(`/${currentVersion}/`)) return;
+      }
+
+      let newUrl;
+      if (url.startsWith("/")) {
+        newUrl = `/${currentVersion}${url}`;
+      } else {
+        newUrl = `${currentBase}/${currentVersion}${url.replace(currentBase, "")}`;
+      }
+
+      promises.push(
+        new Promise(() => {
+          fetch(newUrl);
+          link.setAttribute(attr, newUrl)
+        })
+      )
+    });
+
+    Promise.all(promises)
+  };
+
+  if (document.readyState === "loading") {
+    document.addEventListener("readystatechange", () => {
+      if (document.readyState === "interactive") {
+        processLinksAndImages();
+      }
+    });
+  } else {
+    processLinksAndImages();
+  }
+</script>
+
+  </body>
+</html>
