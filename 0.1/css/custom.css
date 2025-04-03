@@ -17,6 +17,11 @@ img {
     box-shadow: 1px 1px 12px 1px rgba(0, 0, 0, 0.5);
 }
 
+.classic_img {
+  border-radius: 0;
+  box-shadow: none;
+}
+
 header img {
     border-radius: 0;
     box-shadow: none;
