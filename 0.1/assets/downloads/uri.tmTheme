@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plist version="1.0">
+<dict>
+    <key>name</key>
+    <string>Uri Dark Theme</string>
+    <key>scope</key>
+    <string>source.uri</string>
+    <key>settings</key>
+    <array>
+        <!-- Fondo oscuro -->
+        <dict>
+            <key>settings</key>
+            <dict>
+                <key>background</key>
+                <string>#1E1E1E</string> <!-- Gris oscuro -->
+                <key>foreground</key>
+                <string>#FFFFFF</string> <!-- Blanco por defecto -->
+                <key>caret</key>
+                <string>#FFFFFF</string> <!-- Blanco para el cursor -->
+                <key>lineHighlight</key>
+                <string>#2E2E2E</string> <!-- Un poco más claro que el fondo -->
+                <key>selection</key>
+                <string>#4B4B4B</string> <!-- Color de la selección -->
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Strings</string>
+            <key>scope</key>
+            <string>expression.operation.uri</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#ff3d3d</string> <!-- Naranja desgastado -->
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Strings</string>
+            <key>scope</key>
+            <string>string.quoted.double.uri</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#FFA07A</string> <!-- Naranja desgastado -->
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Uppercase Words</string>
+            <key>scope</key>
+            <string>keyword.control.uppercase.uri</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#eaf272</string> <!-- Azul mar algo claro -->
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Lowercase Words</string>
+            <key>scope</key>
+            <string>keyword.control.lowercase.uri</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#d891d9</string> <!-- Lila -->
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Numbers</string>
+            <key>scope</key>
+            <string>constant.numeric.uri</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#60b360</string> <!-- Verde claro -->
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Other Words</string>
+            <key>scope</key>
+            <string>variable.locale.uri</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#ff7029</string> <!-- Azul claro -->
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Other Words</string>
+            <key>scope</key>
+            <string>variable.other.uri</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#7db4fa</string> <!-- Azul claro -->
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Other Words</string>
+            <key>scope</key>
+            <string>variable.defined.uri</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#e3812b</string> <!-- Azul claro -->
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Comments</string>
+            <key>scope</key>
+            <string>comment.line.double-slash.uri</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#858585</string> <!-- Gris apagado -->
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Assignment Key</string>
+            <key>scope</key>
+            <string>keyword.other.assignment.key.uri</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#3b91ff</string> <!-- Azul -->
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Indented Words</string>
+            <key>scope</key>
+            <string>keyword.control.indented.uri</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#f05da7</string> <!-- Rosa fuerte -->
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Locked Words</string>
+            <key>scope</key>
+            <string>keyword.control.locked.uri</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#f2184b</string> <!-- Rosa fuerte -->
+            </dict>
+        </dict>
+    </array>
+</dict>
+</plist>
