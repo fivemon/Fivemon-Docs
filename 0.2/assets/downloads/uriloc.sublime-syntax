@@ -1,0 +1,13 @@
+%YAML 1.2
+---
+name: Uriloc
+file_extensions: [uriloc]
+scope: source.uriloc
+
+contexts:
+  main:
+    - match: '^(\w+)(:)\s*("[^"]*")$'
+      captures:
+        1: variable.locale.uri
+        2: string.quoted.double.uriloc
+        3: string.quoted.double.uri
